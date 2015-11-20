@@ -73,4 +73,4 @@ To suggest documentation improvements, click [here][4].
 [3]: <https://github.com/magento/magento2/issues>
 [4]: <http://devdocs.magento.com>
 
-Mage change on last line
+
