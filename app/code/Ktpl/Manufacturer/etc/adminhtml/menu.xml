@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="Ktpl_Manufacturer::main_menu" title="Manufacturer" module="Ktpl_Manufacturer" sortOrder="20" resource="Ktpl_Manufacturer::manufacturer" />
+        <add id="Ktpl_Manufacturer::manage_manufacturer" title="Manage Manufacturer" module="Ktpl_Manufacturer" sortOrder="1" parent="Ktpl_Manufacturer::main_menu" action="manufacturer/manufacturer/index" resource="Ktpl_Manufacturer::manage_manufacturer" />
+        <add id="Ktpl_Manufacturer::configuration" title="Configurations" module="Ktpl_Manufacturer" sortOrder="3" parent="Ktpl_Manufacturer::main_menu" action="adminhtml/system_config/edit/section/manufacturer" resource="Ktpl_Manufacturer::configuration" />
+    </menu>
+</config>

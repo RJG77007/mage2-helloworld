@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="3columns" 
+    xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <head>
+        <!--<script src="Ktpl_Blog::js/jquery1.9.1.min.js" />-->
+
+        <css src="Ktpl_Blog::css/style.css" />
+        <css src="Ktpl_Blog::css/jquery.bxslider.css" />
+        <!--<script src="Ktpl_Blog::js/jquery.bxslider.js" />       -->
+    </head>
+</page>

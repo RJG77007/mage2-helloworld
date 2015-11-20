@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Core/etc/config.xsd">
+    <default>
+        <manufacturer>
+            <general>
+                <enable_in_frontend>1</enable_in_frontend>
+                <head_title>Manufacturer List</head_title>
+            </general>
+        </manufacturer>
+    </default>
+</config>

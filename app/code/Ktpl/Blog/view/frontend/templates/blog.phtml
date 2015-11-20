@@ -1,0 +1,65 @@
+<div class="simplenews">
+    <?php  
+
+    //DebugBreak();
+
+    $isControlEnable = $this->helper('Ktpl\Blog\Helper\Data')->getShowControls();
+    $sliderSpeed = $this->helper('Ktpl\Blog\Helper\Data')->getSlidingSpeed();
+    $isAutoSliding = $this->helper('Ktpl\Blog\Helper\Data')->getAutoSliding();
+
+
+
+    ?>    
+    <?php $newsCollection = $block->getCollection();
+    if ($newsCollection->getSize() > 0) :
+        ?>
+        <div class="toolbar top">
+            <?php echo $block->getPagerHtml(); ?>
+        </div>
+
+        <ul class="bxslider">
+
+
+            <?php foreach ($newsCollection as $news) : ?>
+
+                <li>
+                    <a href="#"><img alt="" src="<?php echo $block->getNewsImageUrl($news)."/".$news->getBanner(); ?>"/></a>
+                </li>        
+                <?php endforeach; ?>
+
+        </ul>
+
+
+        <div style="clear: both"></div>
+
+        <div class="toolbar-bottom">
+            <div class="toolbar bottom">
+                <?php echo $block->getPagerHtml(); ?>
+            </div>
+        </div>
+        <?php else : ?>
+        <p><?php echo __('Have no article!') ?></p>
+        <?php endif; ?>
+</div>
+<script type="text/javascript" >
+
+    require([
+        "jquery1.9.1.min",
+        "jquery.bxslider"
+        ], function($) {
+            jQuery(document).ready(function($){
+
+                $('.bxslider').bxSlider({
+                    //minSlides: 3,
+                    maxSlides: 1,
+                    slideWidth: 500,
+                    slideMargin: 10,
+                    auto: <?php echo $isAutoSliding ?>,
+                    speed: <?php echo $sliderSpeed; ?>,
+                    controls: <?php echo $isControlEnable; ?>
+                });
+            });
+    });
+
+
+</script>

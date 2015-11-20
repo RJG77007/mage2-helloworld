@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="3columns"
+    xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <update handle="blog_blog" />
+    <body>
+        <referenceContainer name="content">
+            <block class="Ktpl\Blog\Block\BlogList" name="ktpl_blog_blog_list" template="Ktpl_Blog::blog.phtml" />
+        </referenceContainer>
+    </body>
+</page>

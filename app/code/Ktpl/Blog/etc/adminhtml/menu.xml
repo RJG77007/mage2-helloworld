@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="Ktpl_Blog::main_menu" title="Simple Blog" module="Ktpl_Blog" sortOrder="20" resource="Ktpl_Blog::blog" />
+        <add id="Ktpl_Blog::add_blog" title="Add Blog" module="Ktpl_Blog" sortOrder="1" parent="Ktpl_Blog::main_menu" action="blog/blog/new" resource="Ktpl_Blog::manage_blog" />
+        <add id="Ktpl_Blog::manage_blog" title="Manage Blog" module="Ktpl_Blog" sortOrder="2" parent="Ktpl_Blog::main_menu" action="blog/blog/index" resource="Ktpl_Blog::manage_blog" />
+        <add id="Ktpl_Blog::configuration" title="Configurations" module="Ktpl_Blog" sortOrder="3" parent="Ktpl_Blog::main_menu" action="adminhtml/system_config/edit/section/blog" resource="Ktpl_Blog::configuration" />
+    </menu>
+</config>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+ <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Core/etc/config.xsd">
+    <default>
+        <blog>
+            <general>
+                <enable_in_frontend>1</enable_in_frontend>
+                <head_title>KTPL - Blog</head_title>
+                <blog_position>1</blog_position>
+                <auto_slider>true</auto_slider>
+                <auto_slider_timing>700</auto_slider_timing>
+                <show_controls>true</show_controls>
+            </general>
+        </blog>
+    </default>
+</config>
